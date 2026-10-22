@@ -2,7 +2,7 @@
 
 A lightweight focus-cycle (Pomodoro-style) widget for Windows and macOS. A single dot-matrix block shows the current phase, the time left and a loading bar.
 
-<!-- Add a screenshot as docs/images/widget.png and uncomment: ![Dot Focus](docs/images/widget.png) -->
+![Dot Focus](docs/images/widget.png)
 
 ## What it does
 
@@ -43,4 +43,4 @@ Dot Focus is built with [Tauri](https://tauri.app), like the others: a small Rus
 
 See [BUILDING.md](BUILDING.md). The steps are the same as Dot Timer's; the installer is called `Dot Focus_1.0.0_x64_en-US.msi`.
 
-<!-- Add a screenshot as docs/images/widget.png and uncomment: ![Dot Focus](docs/images/settings.png) -->
+![Dot Focus](docs/images/settings.png)
