@@ -22,7 +22,7 @@ The `.msi` has to be built on Windows and the `.dmg` on macOS. The steps are the
    npm run build:win
    ```
 
-4. The installer is written to `src-tauri\target\release\bundle\msi\Dot Focus_1.0.0_x64_en-US.msi`.
+4. The installer is written to `src-tauri\target\release\bundle\msi\Dot Focus_1.1.0_x64_en-US.msi`.
 
 ### macOS (makes a universal .dmg)
 
@@ -55,7 +55,7 @@ tests/               Node tests
 
 ## Things to know
 
-- **The link to World Time is by identifier.** "Match World Time" finds World Time's settings using its app identifier, `app.worldtime.dotmatrix`. If you change that identifier in World Time's `tauri.conf.json`, also change `WORLD_TIME_ID` at the top of `src-tauri/src/lib.rs` here.
+- **The link to World Time is by identifier.** "Match World Time" finds dot-clock's settings using its app identifier, `app.worldtime.dotmatrix`. If you change that identifier in World Time's `tauri.conf.json`, also change `WORLD_TIME_ID` at the top of `src-tauri/src/lib.rs` here.
 - **Test the chimes in the installed app.** On Windows the app tells WebView2 it may play sound without a click first (`additionalBrowserArgs` in `tauri.conf.json`). On macOS, check that a phase ending on its own makes a sound.
 - **The installers aren't code-signed.** As with World Time, Windows will show a SmartScreen warning and macOS needs **Privacy & Security › Open Anyway**.
 - **Replace the placeholder identifier** `app.worldtime.dotfocus` in `src-tauri/tauri.conf.json` if you like.
